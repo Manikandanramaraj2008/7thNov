@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //   var myDiv = document.createElement("div")
+        // myDiv.innerText = "Vallalar gift"
+        // document.body.appendChild(myDiv)
+        // var ul = document.createElement("ul")
+        //for (var i = 0; i < 10; i++) {
+        //   var li = document.createElement("li")
+        //  li.innerText =i
+        //ul.appendChild(li)
+        //}
+
+        //document.body.appendChild(ul)
+
+        //var myDiv = document.createElement("div")
+        // myDiv.style.backgroundColor="green"
+        //myDiv.style.height = "200px"
+        // myDiv.style.width = "100px"
+        //document.body.appendChild(myDiv)
+
+
+
+        for (var i = 0; i <= 10; i++) {
+            var myDiv = document.createElement("div")
+           
+            myDiv.style.height = math.random() * 100 + "px"
+            myDiv.style.width = math.random() * 100 + "px"
+            myDiv.style.margin = "5px"
+
+            var r= math.random() * 200
+            var g = math.random() * 200
+            var b = math.random() * 200
+
+
+            myDiv.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+
+            document.body.appendChild(myDiv)
+        }
+
+
+
+    </script>
+</body>
+
+</html>

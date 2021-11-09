@@ -8,12 +8,19 @@
 </head>
 <body>
     <script>
+        
+        
         var itemList = ["ram","siva","vallalar"];
+        var ul = document.createElement("ul")
+
         itemList.forEach(function(item)
         {
-            console.log(item)
+            var li = document.createElement("li")
+            li.innerText = item
+            ul.appendChild(li)
+            
         }   )                                                
-document.body.appendChild(itemList)
+document.body.appendChild(ul)
     </script>
 
 
